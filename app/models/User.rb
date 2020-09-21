@@ -48,8 +48,4 @@ class User
     def safe_recipes
         Recipe.all.reject {|v| self.is_recipe_unsafe?(v) != false}
     end
-
-
-
-
 end
